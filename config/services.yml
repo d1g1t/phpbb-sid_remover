@@ -1,0 +1,7 @@
+services:
+    d1g1t.sid_remover.listener:
+        class: d1g1t\sid_remover\event\main_listener
+        arguments:
+            - '@user'
+        tags:
+            - { name: event.listener }

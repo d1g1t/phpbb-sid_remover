@@ -1,0 +1,27 @@
+{
+    "name": "d1g1t/sid_remover",
+    "type": "phpbb-extension",
+    "description": "",
+    "homepage": "",
+    "version": "0.0.1",
+    "time": "2025-08-14",
+    "license": "GPL-2.0-only",
+    "authors": [
+        {
+            "name": "d1g1t",
+            "email": "",
+            "homepage": "",
+            "role": ""
+        }
+    ],
+    "require": {
+        "php": "7.0",
+        "composer/installers": "~1.0"
+    },
+    "extra": {
+        "display-name": "SID Remover",
+        "soft-require": {
+            "phpbb/phpbb": ">=3.3.0"
+        }
+    }
+}
