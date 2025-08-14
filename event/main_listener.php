@@ -38,14 +38,14 @@ class main_listener implements EventSubscriberInterface
 		//Do not meddle if NEED_SID is set
 		if(defined('NEED_SID')) return;
 		//New url needs to be written to this
-		$event['append_sid_overwrite'] = $this->append_id($event);
+		$event['append_sid_overwrite'] = $this->append_sid($event);
 	}
 
-	private function append_id($event) {
-		//Globals that the default append_id() uses
+	private function append_sid($event) {
+		//Globals that the default append_sid() uses
 		global $_SID, $_EXTRA_URL;
 
-		//Map vars so that original append_id() code can be copy pasted
+		//Map vars so that original append_sid() code can be copy pasted
 		$url = $event['url'];
 		$params = $event['params'];
 		$is_amp = $event['is_amp'];
