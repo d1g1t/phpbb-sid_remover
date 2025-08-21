@@ -84,8 +84,8 @@ I had Gemini convert this to an `.htaccess` format. It looks like it should work
     RewriteRule .* %{REQUEST_URI}? [R=301,L]
 </IfModule>
 
-**The above changes are not required for the extension to work.**
 ```
+**The above changes are not required for the extension to work.**
 
 ## Installation
 
